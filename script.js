@@ -17,7 +17,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Виводимо розрахований час в елемент з id "timer"
-  document.getElementById("timer").innerHTML = days + "д " + hours + "г " + minutes + "хв " + seconds + "с ";
+  document.getElementById("timer").innerHTML = "До кінця акції: " + days + "д " + hours + "г " + minutes + "хв " + seconds + "с ";
 
   // Якщо час вже вичерпано, зупиняємо таймер та виводимо повідомлення
   if (distance < 0) {
